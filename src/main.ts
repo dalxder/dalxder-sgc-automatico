@@ -1,13 +1,14 @@
 import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+//import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
+import crossfilter from 'crossfilter2';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule],
-  template: '.main.component.html',
+  //imports: [CommonModule],
+  templateUrl: './main.component.html',
 })
 export class App {
   name = 'Angular';
